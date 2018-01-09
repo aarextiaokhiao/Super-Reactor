@@ -1,1 +1,2 @@
 # Super Reactor
+A knockoff of CatsAreFluffy's [https://catsarefluffy.github.io/reactorkk/](Reactor Knockoff Knockoff), which is knockoff of cwmonkey's [https://cwmonkey.github.io/reactor-knockoff/](Reactor Knockoff), which is knockoff of cael's [http://www.kongregate.com/games/cael/reactor-incremental](Reactor Incremental), which is knockoff of Baldurans' [http://www.kongregate.com/games/Baldurans/reactor-idle](Reactor Idle).
