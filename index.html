@@ -9,30 +9,57 @@
 		table {
 			border-spacing:0;
 		}
+		td {
+			padding:0;
+		}
+		#grid {
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			width: 800px;
+		}
 	</style>
 </head>
 <body>
 	<title>Super Reactor</title>
 	<NOSCRIPT><table style='position:fixed; height:100%; width:100%; background-color:#E5E5E5; color:#000000; text-align:center; z-index:1'><tr><td>You have to enable JavaScript to play!</td></tr></table></NOSCRIPT>
-	<table style='height:48px; width:100%; font-size:24px; text-align:center'>
-		<tr>
-			<td style='width:25%; background-color:#E5E5E5'>
-				<b>Money:</b><br>
-				<text>$0</text>
-			</td>
-			<td style='width:25%; background-color:#727272'>
-				<b>Power:</b><br>
-				<text>0/1000</text>
-			</td>
-			<td style='width:25%; background-color:#E5E5E5'>
-				<b>Heat:</b><br>
-				<text>0/1000</text>
-			</td>
-			<td style='width:25%; background-color:#727272'>
-				<b>Exotic Particles:</b><br>
-				<text>0</text>
-			</td>
-		</tr>
+	<table style='height:100%; width:100%'>
+		<tr style='height:72px'><td>
+			<table style='height:48px; width:100%; font-size:24px; text-align:center'>
+				<tr>
+					<td style='width:25%; background-color:#E5E5E5'>
+						<b>Money:</b><br>
+						<text id='money'>$10</text>
+					</td>
+					<td style='width:25%; background-color:#BFBFBF'>
+						<b>Power:</b><br>
+						<text id='power'>0/100</text>
+					</td>
+					<td style='width:25%; background-color:#E5E5E5'>
+						<b>Heat:</b><br>
+						<text id='heat'>0/1000</text>
+					</td>
+					<td style='width:25%; background-color:#BFBFBF'>
+						<b>Exotic Particles:</b><br>
+						<text id='ep'>0</text>
+					</td>
+				</tr>
+			</table>
+			<div style='background-color:#E5E5E5; height:24px; width:100%; font-size:24px; text-align:center'><b>Objective:</b> <text id='objective'>Build your first reactor</text> <text id='reward'>($10, +1 EXP)</text></div>
+		</td></tr>
+		<tr style='max-height:100%'><td>
+			<table style='height:100%; width:100%'><tr>
+				<td style='background-color:#999999; height:100%; width:180px; vertical-align:0'>
+					Coming soon...
+				</td>
+				<td style='background-color:#191919; height:100%; max-width:100%'>
+					<canvas id='grid' style='height:360px; width:360px; background-color:#E5E5E5'>
+					</canvas>
+				</td>
+			</tr></table>
+		</td></tr>
+		<tr style='height:24px'><td style='background-color:#999999'><a href="https://catsarefluffy.github.io/reactorkk/" target="_newtab">Original</a> | <a href="https://cwmonkey.github.io/reactor-knockoff/" target="_newtab">Very original</a> | <a href="http://www.kongregate.com/games/cael/reactor-incremental" target="_newtab">Super original</a> | <a href="http://www.kongregate.com/games/Baldurans/reactor-idle" target="_newtab">True original</a> | <a href="https://minecraft.curseforge.com/projects/industrial-craft/files" target="_newtab">Alternate</a></td></tr>
 	</table>
-	<div style='background-color: #999999; position: fixed; bottom: 0; width: 100%; color: #000000'><a href="https://catsarefluffy.github.io/reactorkk/" target="_newtab">Original</a> | <a href="https://cwmonkey.github.io/reactor-knockoff/" target="_newtab">Very original</a> | <a href="http://www.kongregate.com/games/cael/reactor-incremental" target="_newtab">Super original</a> | <a href="http://www.kongregate.com/games/Baldurans/reactor-idle" target="_newtab">True original</a> | <a href="https://minecraft.curseforge.com/projects/industrial-craft/files" target="_newtab">Alternate</a></div>
 </body>
