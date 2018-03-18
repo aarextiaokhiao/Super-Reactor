@@ -12,6 +12,27 @@
 		td {
 			padding:0;
 		}
+		button {
+			background-color:#999999;
+			font-family:Roboto;
+			width:96px;
+			height:24px;
+			padding:0;
+			border:0;
+			transition-duration:0.2s
+		}
+		button:hover, .oddbutton {
+			background-color: #BFBFBF
+		}
+		.oddbutton:hover, .evenbutton {
+			background-color: #CCCCCC
+		}
+		.evenbutton:hover {
+			background-color: #E5E5E5
+		}
+		button:active, .oddbutton:active, .evenbutton:active {
+			background-color: #727272
+		}
 		#grid {
 			background-color:#E5E5E5;
 			border-collapse:collapse
@@ -41,11 +62,11 @@
 					</td>
 					<td style='width:25%; background-color:#BFBFBF'>
 						<b>Power:</b><br>
-						<text id='power'>0/100</text>
+						<text id='power'>0W/100W</text>
 					</td>
 					<td style='width:25%; background-color:#E5E5E5'>
-						<b>Heat:</b><br>
-						<text id='heat'>0/1000</text>
+						<b>Heat:</b> <text id='heat'>0/100</text><br>
+						<button id='sell'>Sell (+$0)</button>
 					</td>
 					<td style='width:25%; background-color:#BFBFBF'>
 						<b>Exotic Particles:</b><br>
@@ -57,8 +78,36 @@
 		</td></tr>
 		<tr style='max-height:100%'><td>
 			<table style='height:100%; width:100%'><tr>
-				<td style='background-color:#999999; height:100%; width:180px; vertical-align:0'>
-					Coming soon...
+				<td style='background-color:#999999; height:100%; width:320px; vertical-align:0'>
+					<div style='width:320px;overflow-x:auto'><table><tr><td><button class='oddbutton' onclick='switchTab("reactor")'>Reactors</button></td>
+						<td><button class='evenbutton' onclick='switchTab("gen")'>Generators</button></td>
+						<td><button class='oddbutton' onclick='switchTab("coolant")'>Coolants</button></td>
+						<td><button class='evenbutton' onclick='switchTab("option")'>Options</button></td>
+						<td><button class='oddbutton' onclick='switchTab("stats")'>Stats</button></td>
+						<td><button class='evenbutton' onclick='switchTab("objective")'>Objectives</button></td>
+						<td id='rebootCell' style='display:none'><button class='oddbutton' onclick='switchTab("reboot")'>Reboot</button></td></tr></table>
+					</div>
+					<div id='reactortab'>
+						<b>Reactors</b>
+					</div>
+					<div id='gentab' style='display:none'>
+						<b>Generators</b>
+					</div>
+					<div id='coolanttab' style='display:none'>
+						<b>Coolants</b>
+					</div>
+					<div id='optiontab' style='display:none'>
+						<b>Options</b>
+					</div>
+					<div id='statstab' style='display:none'>
+						<b>Stats</b>
+					</div>
+					<div id='objectivetab' style='display:none'>
+						<b>Objectives</b>
+					</div>
+					<div id='reboottab' style='display:none'>
+						<b>Reboot</b>
+					</div>
 				</td>
 				<td style='background-color:#191919; height:100%; max-width:100%'>
 					<table id='grid' align=center>

@@ -5,7 +5,7 @@ function drawgrid() {
 		grid.appendChild(tableRow)
 		for (y=0;y<18;y++) {
 			var tableCell=document.createElement('td')
-			tableCell.id='c'+x+y
+			tableCell.id='r'+x+'c'+y
 			tableCell.x=x
 			tableCell.y=y
 			tableRow.appendChild(tableCell)
@@ -14,6 +14,7 @@ function drawgrid() {
 	}
 	
 	setupAbbs()
+	gameInit()
 }
 
 abbs=['','k','M','B','T']
@@ -26,5 +27,4 @@ function setupAbbs() {
 			abbs.push(letters.slice(a,a+1)+letters.slice(b,b+1))
 		}
 	}
-	gameInit()
 }
